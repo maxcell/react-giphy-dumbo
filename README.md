@@ -1,5 +1,29 @@
 # Giphy Search!
 
+
+## Questions we should ask ourselves when writing React
+
+- How to organize our components?
+  - Which should be containers? What should be dumb (stateless) componets?
+  - The relationships between the components? What do they need to have access to?
+- Where should we be doing data fetching? Do we need to update for that data?
+- Where should state live?
+- Do I need to revisit any components because of the code I made?
+
+## Code Challenge
+- Controlled vs. Uncontrolled Forms - What makes them controlled?
+- State and Props - What should be state? When do you need state? When do you need props?
+- Events - Knowing where to add the props and also adding the correct props?
+- Reusing components for different behavior
+
+
+### Thinking about components
+- Search Form Component
+- Header Component?
+- Container for all the GIFs
+- Component for the GIFs themselves
+
+
 ## Instructions
 
 You're going to be building out a Gif search using the Giphy API. The URL for
@@ -59,7 +83,7 @@ is already provided for you, note the project has bootstrap loaded in) and the
 
 #### `<GifListContainer />`
 
-> A container does data fetching and then renders its corresponding sub-component. That’s it.
+A container does data fetching and then renders its corresponding sub-component. That’s it.
 
 - [Container Components](https://medium.com/@learnreact/container-components-c0e67432e005) Learn React with chantastic
 - [Presentational vs Container Componets](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0) Dan Abramov
