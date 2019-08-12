@@ -16,11 +16,19 @@
 - Events - Knowing where to add the props and also adding the correct props?
 - Reusing components for different behavior
 
+         App
+          GifListContainer
+    /     |    \
+ NavBar List  SearchForm  
+          |
+        Gifsss
+
 
 ### Thinking about components
-- Search Form Component
+- App (controlled by state?)
+- Search Form Component (controlled by state)
 - Header Component?
-- Container for all the GIFs
+- Container for all the GIFs (controlled by state?)
 - Component for the GIFs themselves
 
 
