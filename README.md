@@ -2,34 +2,17 @@
 
 
 ## Questions we should ask ourselves when writing React
+- What is the component tree/hierarchy?
+- Where does the state(s) live?
+- File Structure
+- What needs to be a function component vs. what needs to be a class component
+- Functions are written differently between function and class components
+- Class based components can handle state
+- Class based components handle lifecycle methods
 
-- How to organize our components?
-  - Which should be containers? What should be dumb (stateless) componets?
-  - The relationships between the components? What do they need to have access to?
-- Where should we be doing data fetching? Do we need to update for that data?
-- Where should state live?
-- Do I need to revisit any components because of the code I made?
+
 
 ## Code Challenge
-- Controlled vs. Uncontrolled Forms - What makes them controlled?
-- State and Props - What should be state? When do you need state? When do you need props?
-- Events - Knowing where to add the props and also adding the correct props?
-- Reusing components for different behavior
-
-         App
-          GifListContainer
-    /     |    \
- NavBar List  SearchForm  
-          |
-        Gifsss
-
-
-### Thinking about components
-- App (controlled by state?)
-- Search Form Component (controlled by state)
-- Header Component?
-- Container for all the GIFs (controlled by state?)
-- Component for the GIFs themselves
 
 
 ## Instructions
@@ -37,7 +20,7 @@
 You're going to be building out a Gif search using the Giphy API. The URL for
 the API is
 
-`http://api.giphy.com/v1/gifs/search?q=YOUR QUERY HERE&api_key=dc6zaTOxFJmzC&rating=g`
+`http://api.giphy.com/v1/gifs/search?q=YOUR QUERY HERE&api_key=API KEY&rating=g`
 
 ![giphy search](https://raw.githubusercontent.com/learn-co-curriculum/react-async-gif-search-lab/master/async.gif)
 
@@ -124,3 +107,11 @@ is this callback function, defined in `<GifListContainer />`, that will actually
 query the API with the text the user has entered.
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/react-async-gif-search-lab'>React Async Gif Search Lab</a> on Learn.co and start learning to code for free.</p>
+
+
+         App
+          GifListContainer
+    /     |    \
+ NavBar List  SearchForm  
+          |
+        Gifsss

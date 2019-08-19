@@ -1,21 +1,27 @@
-import React, { Component } from 'react'
+import React from 'react'
+export default class GifSearch extends React.Component { 
 
-export default class GifSearch extends Component {
   state = {
     searchTerm: ''
   }
 
   handleChange = (event) => {
-    // I want to handle state changes
+    // Change the state of my searchTerm based upon event.target.value
+    const { name, value } = event.target
     this.setState({
-      searchTerm: event.target.value
+      [name]: value
+      // name = "searchTerm"
     })
   }
 
+
+
   render(){
-    return (<form onSubmit={e => this.props.handleSubmit(e, this.state.searchTerm)}>
-      <input type="text" value={this.state.searchTerm} onChange={this.handleChange} />
-      <input type="submit" />
-    </form>)
+    return (
+      <form onSubmit={(e) => { this.props.handleSubmit(e, this.state.searchTerm) }}>
+        <input type="text" name="searchTerm" value={this.state.searchTerm} onChange={this.handleChange} />
+        <input type="submit" value="find you some gifs" />
+      </form>
+    )
   }
 }
